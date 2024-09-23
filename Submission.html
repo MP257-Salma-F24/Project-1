@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+        <link href="css/styles2.css" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+        <title> AUS Campus Connect </title>
+        
+    </head>
+
+    <body  class="p-3 m-0 border-0 bd-example m-0 border-0">
+        <div class="row">
+            <div class="col-lg-4 col-md-2 col-sm-4">
+                <div class="mb-3">
+                    <form action="Submission.html"method="get"> 
+                        <label for="EventName" class="form-label">Event name:</label><br>
+                        <input type="text" class="form-control" id="EventName" name="EventName"  placeholder="eg:Women's Day" required><br>
+                        <label for="EventDate" >Event Date:</label><br>
+                        <input type="date" id="EventDate" name="EventDate" required><br>
+                        <label for="EventTime" >Event Time:</label><br>
+                        <input type="time" id="EventTime" name="EventTime"><br>
+                        <label for="EventLoc" class="form-label" >Event Location:</label><br>
+                        <input type="text" class="form-control" id="EventLoc" name="EventLoc"placeholder="eg: Esb-Auditorium"><br>
+                  </div>
+                
+            </div>
+            <div class="col-lg-4 col-md-2 col-sm-4">
+            
+                <label for="Description-text">Event Description:</label><br>
+                <textarea id="Description-text" class="form-control" aria-describedby="Description-text" name="EventDesc" rows="4" cols="50"></textarea>
+                    <div id="Description-text" class="form-text">
+                    Your Description must be 50-100 words long.
+                  </div>
+                  <br>
+                <p>Is this event open for all students? 
+                 <input type="radio" id="yes" name="box">
+                 <label for="yes" >yes</label>
+                <input type="radio" id="no" name="box">
+                 <label for="no" >no</label> </p>
+                </div>
+            <div class="col-lg-4 col-md-2 col-sm-4">
+                <p>What type of event is this? <br>
+                    <input type="checkbox" id="Workshop" name="Workshop" value="Workshop"> </label>
+                    <label for="Workshop">Workshop</label><br>
+                    <input type="checkbox" id="Social" name="Social" value="Social"> </label>
+                    <label for="Social" >Social</label><br>
+                    <input type="checkbox" id="Sports" name="Sports" value="Sports"> </label>
+                    <label for="Sports" >Sports</label><br>
+                    <input type="checkbox" id="Academic" name="Academic" value="Academic"> </label>
+                    <label for="Academic" >Academic</label></br>
+                    <input type="checkbox" id="Other" name="Other" value="Other"> </label>
+                    <label for="Other" >Other</label> </p>
+                 
+                
+                <div class="dropdown">
+                    <p>Select the department hosting the event:
+                        <select class="btn btn-secondary dropdown-toggleid" name="select">
+                            <option class="dropdown-item" value="CEN">CEN</option>
+                            <option class="dropdown-item"value="SBA">SBA</option>
+                            <option class="dropdown-item"value="CAS">CAS</option>
+                            <option class="dropdown-item"value="CAAD">CAAD</option>
+                            <option class="dropdown-item"value="OSA">OSA</option>
+                            <option class="dropdown-item"value="OTHER">OTHER</option>
+                        </select>
+        
+
+            </div>
+
+            <div class="col-lg-4 col-md-2 col-sm-4">
+                <label for="Orgname" class="lb">Organizer Name:</label><br>
+                <input type="text" id="Orgname" name="Orgname"><br>
+                <label for="Orgemail" class="form-label">Organizer Email:</label><br>
+                <input type="email" class="form-control" id="Orgemail" name="Orgemail" placeholder="ID@aus.edu"><br>
+    
+                <button type="Submit" class="btn btn-primary">Submit</button>
+                <button type="Reset" class="btn btn-secondary">Reset</button>
+                </form>
+
+        
+                <p> Back to homapage - <a href="StudentsConnect.html"> HomePage </a> </p>
+                
+            </div>
+        </div>
+      
+        
+    
+
+       
+       
+
+      
+
+    </body>
+
+
+
+
+</html>
